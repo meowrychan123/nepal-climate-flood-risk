@@ -1,0 +1,8 @@
+pandas
+matplotlib
+scipy
+geopandas
+shapely
+requests
+openpyxl
+folium
