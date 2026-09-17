@@ -19,7 +19,7 @@ This project was motivated by the catastrophic flash flood that struck the Rasuw
 
 ## Key Findings
 
-- Nepal's rainfall is heavily concentrated in the monsoon season (June–September), accounting for **79.03%** of total rainfall in this dataset — closely matching Nepal's Department of Hydrology and Meteorology's official figure of ~80%.
+- Nepal's rainfall is heavily concentrated in the monsoon season (June–September), accounting for **79.03%** of total rainfall in this dataset closely matching Nepal's Department of Hydrology and Meteorology's official figure of ~80%.
 - Total annual rainfall showed a **statistically significant increase** from 2001–2023 (p < 0.0001).
 - The **frequency** of extreme rainfall days increased significantly over the same period (p = 0.0005), consistent with published research on Nepal's changing monsoon patterns.
 - The **intensity** of the single most extreme rainfall day per year showed no statistically significant trend (p = 0.083), suggesting change shows up more in how *often* extreme rainfall occurs, not necessarily in record-breaking single-day totals.
