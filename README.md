@@ -22,7 +22,7 @@ This project was motivated by the catastrophic flash flood that struck the Rasuw
 - Nepal's rainfall is heavily concentrated in the monsoon season (June–September), accounting for **79.03%** of total rainfall in this dataset — closely matching Nepal's Department of Hydrology and Meteorology's official figure of ~80%.
 - Total annual rainfall showed a **statistically significant increase** from 2001–2023 (p < 0.0001).
 - The **frequency** of extreme rainfall days increased significantly over the same period (p = 0.0005), consistent with published research on Nepal's changing monsoon patterns.
-- The **intensity** of the single most extreme rainfall day per year showed no statistically significant trend (p = 0.083) — suggesting change shows up more in how *often* extreme rainfall occurs, not necessarily in record-breaking single-day totals.
+- The **intensity** of the single most extreme rainfall day per year showed no statistically significant trend (p = 0.083), suggesting change shows up more in how *often* extreme rainfall occurs, not necessarily in record-breaking single-day totals.
 - Extreme rainfall clusters geographically around **central Nepal (Pokhara/Annapurna foothills)** and **far-eastern Nepal** — independently matching real-world records showing the Pokhara/Lumle area holds Nepal's highest recorded annual rainfall.
 - **32 of 34 recorded flood events (94%)** coincided with a meaningful rate of extreme rainfall during their event window, providing quantitative evidence linking extreme rainfall to flood risk in Nepal.
 
@@ -46,17 +46,17 @@ Note: the full 23-year rainfall dataset (~27MB) is not included in this repo to 
 1. **Data Collection** — Automated retrieval of 23 years of daily rainfall data across Nepal via the NASA POWER API (website only allows 1-year regional downloads, so this was scripted in Python).
 2. **Data Cleaning** — Date parsing, feature engineering (year, month, monsoon season), and documentation of known limitations (e.g., grid points near Nepal's border).
 3. **Exploratory Data Analysis** — Monthly and seasonal rainfall patterns, verified against official DHM figures; annual trend analysis with statistical significance testing.
-4. **Extreme Rainfall Analysis** — Percentile-based definition of extreme rainfall; frequency and intensity trends over time; geographic hotspot mapping, validated against known rainfall records.
+4. **Extreme Rainfall Analysis** — Percentile-based definition of extreme rainfall, frequency and intensity trends over time; geographic hotspot mapping, validated against known rainfall records.
 5. **Flood-Risk Connection** — Matching EM-DAT flood event dates to rainfall conditions during each event, with careful handling of event-length bias and honest investigation of exceptions.
 6. **Conclusions** — Key findings, limitations, and possible future directions, with care taken throughout to distinguish statistical association from causation.
 
 ## Limitations
 
-- Rainfall data is satellite/reanalysis-derived (NASA POWER/MERRA-2), not ground-station measurements.
+- Rainfall data is satellite/reanalysis-derived (NASA POWER/MERRA-2), not ground station measurements.
 - A rectangular grid was used for regional coverage; a few grid points fall slightly outside Nepal's actual border.
 - EM-DAT only records major disasters meeting specific severity thresholds, and 71% of flood records lacked precise coordinates, limiting geographic (though not temporal) matching precision.
-- This analysis identifies patterns and associations — it does not establish causation. Climate change attribution for specific trends would require specialized modeling beyond this project's scope.
-- This project addresses **rainfall-driven** flood risk only. The August 2026 disaster that motivated this project was a glacier/bedrock collapse — a separate hazard category this analysis cannot speak to.
+- This analysis identifies patterns and associations, it does not establish causation. Climate change attribution for specific trends would require specialized modeling beyond this project's scope.
+- This project addresses **rainfall-driven** flood risk only. The August 2026 disaster that motivated this project was a glacier/bedrock collapse, a separate hazard category this analysis cannot speak to.
 
 ## Tools Used
 
